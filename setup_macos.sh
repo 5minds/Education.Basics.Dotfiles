@@ -43,16 +43,16 @@ brew install --cask $APP_BREWS
 
 if [[ ! "$(echo $SHELL)" == "/bin/zsh" && ! "$(echo $SHELL)" == "/usr/bin/zsh" ]]
 then
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
 compaudit | xargs chmod g-w
 
 # Setup
-mkdir "~/5Minds"
+mkdir "~/5minds"
 mkdir "~/.ssh"
 
-git clone git://github.com/5minds-GSErle/dotfiles.git $REPO_NAME
+git clone https://github.com/5minds/Education.Basics.Dotfiles.git $REPO_NAME
 git config --global core.excludesfile '~/.gitignore'
 git config --global pull.rebase true
 
@@ -75,11 +75,7 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 # Setup project folder
 REPO_NAME="$(id -F | tr ' ' '.' | tr '[:upper:]' '[:lower:]')"
 
-git clone git@github.com:5Minds-GSErle/${REPO_NAME}.git 5Minds
-mkdir -p ~/5Minds/${REPO_NAME}/{Hangman,Galgenmännchen,FlappyBird}
-
-# Setup venv manually
-# cd ~/5Minds/${REPO_NAME}/FlappyBird && python3 -m venv venv && source ./venv/bin/activate && pip3 install pygame &&
+git clone https://github.com/5minds/${REPO_NAME}.git 5minds
 
 # Finish
 echo "You may stillt want to configure the following things:"
