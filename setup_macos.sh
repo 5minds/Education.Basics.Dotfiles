@@ -6,6 +6,8 @@ then
     exit 1
 fi
 
+echo "Test echo"
+
 REPO_NAME=".files"
 CURRENT_PATH=$(pwd)
 DOTFILES_PATH="${CURRENT_PATH}/${REPO_NAME}"
