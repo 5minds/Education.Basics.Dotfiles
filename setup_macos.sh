@@ -48,6 +48,8 @@ then
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
+autoload -Uz compinit
+compinit
 compaudit | xargs chmod g-w
 
 # Setup
