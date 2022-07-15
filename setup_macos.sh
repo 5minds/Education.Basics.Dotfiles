@@ -74,11 +74,6 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-# Setup project folder
-REPO_NAME="$(id -F | tr ' ' '.' | tr '[:upper:]' '[:lower:]')"
-
-git clone https://github.com/5minds/${REPO_NAME}.git 5minds
-
 # Finish
 echo "You may stillt want to configure the following things:"
 echo "  - Request password after lock immediately"
