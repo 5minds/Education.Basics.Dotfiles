@@ -8,5 +8,5 @@ OSX.
 Setup like this on macOS directly after finishing the installation:
 
 ```bash
-zsh -c "$(curl -fsSL https://raw.githubusercontent.com/5minds/Education.Basics.Dotfiles/main/setup_macos.sh)"
+zsh -c "$(curl -fsSL https://raw.githubusercontent.com/5minds/Education.Basics.Dotfiles/develop/setup_macos.sh)"
 ```
