@@ -51,9 +51,8 @@ compinit
 compaudit | xargs chmod g-w
 
 # Setup
-cd ~
-mkdir "5minds"
-mkdir ".ssh"
+cd ~ && mkdir "5minds"
+cd ~ && mkdir ".ssh"
 
 git clone https://github.com/5minds/Education.Basics.Dotfiles.git $REPO_NAME
 git config --global core.excludesfile '~/.gitignore'
