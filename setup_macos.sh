@@ -54,9 +54,10 @@ compaudit | xargs chmod g-w
 cd ~ && mkdir "5minds"
 cd ~ && mkdir ".ssh"
 
-git clone https://github.com/5minds/Education.Basics.Dotfiles.git $REPO_NAME
-git config --global core.excludesfile '~/.gitignore'
+git config --global core.excludesfile '~/.config/git/ignore'
+git config --global init.defaultBranch main
 git config --global pull.rebase true
+git config --global advice.statusHints false
 
 code --install-extension editorconfig.editorconfig
 code --install-extension shardulm94.trailing-spaces
