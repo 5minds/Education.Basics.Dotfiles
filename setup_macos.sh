@@ -59,10 +59,6 @@ git config --global init.defaultBranch main
 git config --global pull.rebase true
 git config --global advice.statusHints false
 
-code --install-extension editorconfig.editorconfig
-code --install-extension shardulm94.trailing-spaces
-code --install-extension stkb.rewrap
-
 ln -sf "${DOTFILES_PATH}/git/.gitignore" $HOME
 ln -sf "${DOTFILES_PATH}/zsh/.zshrc" $HOME
 
