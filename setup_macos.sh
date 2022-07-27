@@ -20,7 +20,6 @@ fi
 CLI_BREWS=(
     git
     htop
-    neovim
     nvm
     python3
     wget
@@ -30,7 +29,6 @@ CLI_BREWS=(
 APP_BREWS=(
     1password
     firefox
-    github
     google-chrome
     iterm2
     pycharm-edu
