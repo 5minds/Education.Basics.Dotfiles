@@ -55,10 +55,11 @@ git config --global pull.rebase true
 git config --global advice.statusHints false
 
 git clone https://github.com/5minds/Education.Basics.Dotfiles.git $REPO_NAME
-echo "${DOTFILES_PATH}"
 
 ln -sf "${DOTFILES_PATH}/git/.gitignore" $HOME
 ln -sf "${DOTFILES_PATH}/zsh/.zshrc" $HOME
+
+rm -rf $REPO_NAME
 
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
