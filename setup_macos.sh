@@ -39,10 +39,7 @@ APP_BREWS=(
 brew install $CLI_BREWS
 brew install --cask $APP_BREWS
 
-if [[ ! "$(echo $SHELL)" == "/bin/zsh" && ! "$(echo $SHELL)" == "/usr/bin/zsh" ]]
-then
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-fi
 
 autoload -Uz compinit
 compinit
