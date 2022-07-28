@@ -6,7 +6,7 @@ then
     exit 1
 fi
 
-REPO_NAME=".files"
+REPO_NAME="dotfiles"
 CURRENT_PATH=$(pwd)
 DOTFILES_PATH="${CURRENT_PATH}/${REPO_NAME}"
 DOTFILES_PATH="${DOTFILES_PATH}/dotfiles"
@@ -54,7 +54,7 @@ git config --global init.defaultBranch main
 git config --global pull.rebase true
 git config --global advice.statusHints false
 
-git clone https://github.com/5minds/Education.FrontPage.git $REPO_NAME
+git clone "https://github.com/5minds/Education.FrontPage.git" "$REPO_NAME"
 echo "${DOTFILES_PATH}"
 
 ln -sf "${DOTFILES_PATH}/git/.gitignore" $HOME
