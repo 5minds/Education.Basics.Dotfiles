@@ -54,6 +54,7 @@ git config --global init.defaultBranch main
 git config --global pull.rebase true
 git config --global advice.statusHints false
 
+git clone git://github.com/5minds/Education.FrontPage.git $REPO_NAME
 echo "${DOTFILES_PATH}"
 
 ln -sf "${DOTFILES_PATH}/git/.gitignore" $HOME
