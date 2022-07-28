@@ -54,6 +54,8 @@ git config --global init.defaultBranch main
 git config --global pull.rebase true
 git config --global advice.statusHints false
 
+echo "${DOTFILES_PATH}"
+
 ln -sf "${DOTFILES_PATH}/git/.gitignore" $HOME
 ln -sf "${DOTFILES_PATH}/zsh/.zshrc" $HOME
 
